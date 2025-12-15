@@ -1,0 +1,9 @@
+nav a:link, .nav a:visited {
+    text-decoration: none;
+    color: #b9bbea;
+}
+
+nav a:hover, nav a.active {
+    color: yellow;
+}
+
