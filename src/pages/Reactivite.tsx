@@ -1,4 +1,5 @@
 import {useState} from "react";
+// import type { User} from "../utils/types/User.ts";
 
 function Reactivite() {
     let count = 0;
@@ -51,6 +52,7 @@ function Reactivite() {
 
     return (
         <>
+            {/* mon commentaire */}
             <h1>La Réactivité</h1>
 
             <section>
