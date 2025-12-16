@@ -1,0 +1,33 @@
+.btn.main {
+    --bg: rebeccapurple;
+    --color: white;
+}
+
+.btn.success {
+    --bg: green;
+    --color: white;
+}
+
+.btn.danger {
+    --bg: red;
+    --color: white;
+}
+
+.btn {
+    background: var(--bg);
+    border: 1px solid var(--bg);
+    color: var(--color);
+    border-radius: 500px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.btn.secondary {
+    background: var(--color);
+    color: var(--bg);
+}
+
+.btn.tertiary {
+    background: transparent;
+    border-color: transparent;
+}

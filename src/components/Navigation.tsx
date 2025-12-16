@@ -18,6 +18,12 @@ function Navigation() {
                 <li>
                     <NavLink to="/reactivity">Réactivité</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/librairie">Librairie</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/hooks">Hooks</NavLink>
+                </li>
             </ul>
         </nav>
     )
