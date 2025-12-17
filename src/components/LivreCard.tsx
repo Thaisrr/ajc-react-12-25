@@ -1,4 +1,5 @@
 import type {LivreType} from "../utils/types/Librairie.type.ts";
+import {JSX} from "react";
 
 type Card1PropsType = {message?: string}
 export const Card1 = ({message = "Coucou"}: Card1PropsType) => {
@@ -24,5 +25,18 @@ type TitleProps = {children: string}
 export const Title = ({children}: TitleProps ) => {
     return (
         <h4>{children}</h4>
+    )
+}
+
+export enum Keys {
+    a = "A", b = "B", c = "C"
+}
+export const TestChildren = ({children}: {children:  {[key in Keys] : (string | JSX.Element) }} ) => {
+
+    return (
+      <>
+          <h3>{children[Keys.a]}</h3>
+          <p>{children[Keys.b]}</p>
+      </>
     )
 }

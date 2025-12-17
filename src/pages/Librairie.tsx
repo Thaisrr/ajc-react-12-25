@@ -1,7 +1,7 @@
 import {useState} from "react";
 import type {LibrairieType} from "../utils/types/Librairie.type.ts";
 import {LibrairiesDB} from "../utils/db/Librairie.db.ts";
-import {Card1, CardLivre, Title} from "../components/LivreCard.tsx";
+import {Card1, CardLivre, Keys, TestChildren, Title} from "../components/LivreCard.tsx";
 import MyButton from "../components/MyButton.tsx";
 
 const Librairie = () => {
@@ -49,6 +49,16 @@ const Librairie = () => {
                     />
                 ))}
             </div>
+
+            <TestChildren>
+                {
+                    {
+                        [Keys.b]: "Coucou",
+                        [Keys.a]: 'jvklx',
+                        [Keys.c]: "jkdljdkl"
+                    }
+                }
+            </TestChildren>
         </>
     )
 }

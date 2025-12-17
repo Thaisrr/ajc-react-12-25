@@ -1,5 +1,5 @@
 import {useState} from "react";
-// import type { User} from "../utils/types/User.ts";
+// import type { User} from "../utils/types/User.type.ts";
 
 function Reactivite() {
     let count = 0;

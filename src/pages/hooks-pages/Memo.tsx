@@ -23,6 +23,8 @@ const Memo = () => {
         return sum / notes.length;
     }, [notes]);
 
+
+
     // TODO : pourquoi à chaque re-rendu ???
     const moyenneCallback = useCallback((color: string) => {
         console.log("%c Moyenne callback", `background: ${color}`);

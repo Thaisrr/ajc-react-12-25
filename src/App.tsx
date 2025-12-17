@@ -10,6 +10,12 @@ import ClasseComponent from "./pages/hooks-pages/ClasseComponent.tsx";
 import HookEffet from "./pages/hooks-pages/hookEffet.tsx";
 import Memo from "./pages/hooks-pages/Memo.tsx";
 import HookContexte from "./pages/hooks-pages/HookContexte.tsx";
+import HookPerso from "./pages/hooks-pages/HookPerso.tsx";
+import {LesStores} from "./pages/LesStores.tsx";
+//import PageAdmin from "./pages/PageAdmin.tsx";
+import {lazy} from "react";
+import AdminGuard from "./utils/guards/AdminGuard.tsx";
+const PageAdmin = lazy(() => import('./pages/PageAdmin.tsx')); // Lazy Loading
 
 function App() {
 
@@ -27,7 +33,10 @@ function App() {
                     <Route path="effect" element={<HookEffet />} />
                     <Route path="memo" element={<Memo />} />
                     <Route path="context" element={<HookContexte />} />
+                    <Route path="perso" element={<HookPerso />} />
                 </Route>
+                <Route path="store" element={<LesStores />} />
+                <Route path="admin" element={<AdminGuard><PageAdmin /></AdminGuard>} />
                 <Route path="*" element={<h1>😭 404 - Vous êtes perdu•e ?</h1>}/>
             </Routes>
             <footer>

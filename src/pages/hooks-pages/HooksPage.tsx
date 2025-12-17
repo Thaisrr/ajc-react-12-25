@@ -19,6 +19,9 @@ const HooksPage = () => {
                     <li>
                         <NavLink to="context">Hook Context</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="perso">Hook Perso</NavLink>
+                    </li>
                 </ul>
             </nav>
             <Outlet />
